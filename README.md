@@ -24,7 +24,7 @@ Um web site sobre CS 1.6 que fala sobre tudo o que precisa saber, de como jogar,
 
 ## 📂 Estrutura do Projeto
 
-bash
+```bash
 📂 css
 ├──style1.css
 ├──style2.css
@@ -54,6 +54,10 @@ bash
 ├──historia2.js
 ├──index.js
 ├──register.js
+📝package
+📝package-lock
+```
+
 
 
   
