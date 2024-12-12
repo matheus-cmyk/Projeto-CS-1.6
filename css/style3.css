@@ -1,0 +1,208 @@
+/* Resetando margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo o fundo e as fontes */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #1b2028, #587097);
+    background-size: 200% 200%;
+    animation: gradientCS 3s ease infinite;
+    color: white;
+}
+
+/* Animação de gradiente super rápida e nítida */
+@keyframes gradientCS {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Container geral do dashboard */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos do cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+header .logo h1 {
+    font-size: 28px;
+    color: #bcab4d;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #bcab4d;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #bcab4d;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#logout-button {
+    background-color: #587097;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 12px; 
+}
+
+#logout-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #logout-button {
+        align-self: flex-end;
+    }
+}
+
+/* Estilos das seções */
+section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+section:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+section h2 {
+    font-size: 24px;
+    color: #bcab4d;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Botões de navegação */
+.button-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #bcab4d;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.button-link:hover {
+    background-color: #9a8a3b;
+    transform: translateY(-3px);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #333;
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 10px;
+    }
+
+    header .logo h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    .button-link {
+        padding: 8px 18px;
+    }
+}

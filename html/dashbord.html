@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <link rel="stylesheet" href="/css/style3.css">
+    <link rel="icon" href="/img/ImgHist/icon.jpg">
+    <title>DashBord</title>
+</head>
+
+<body>
+
+    <body>
+        <div class="dashboard-container">
+            <!-- Cabeçalho -->
+            <header>
+                <div class="logo">
+                    <h1>CS 1.6 Dashboard</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#history">História do Jogo</a></li>
+                        <li><a href="#config">Como Configurar</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#howto">Como Jogar</a></li>
+                        <li><a href="#videos">Vídeos</a></li>
+                        <li><a href="#credits">Créditos</a></li>
+                    </ul>
+                    <br>
+                    <button id="logout-button">Logout</button>
+                </nav>
+            </header>
+
+            <!-- Conteúdo principal -->
+            <div class="content">
+                <section id="history">
+                    <h2>História do Jogo</h2>
+                    <p>Desenvolvido por Minh Le e Jess Cliffe, Counter-Strike começou como um mod para o jogo Half-Life
+                        em 1999. Em 2000, o jogo foi adquirido pela Valve e começou a ser comercializado...</p>
+                    <a href="/html/history.html" class="button-link">Leia mais sobre a história</a>
+                </section>
+
+                <section id="config">
+                    <h2>Como Configurar</h2>
+                    <p>Para configurar o seu jogo, siga estas etapas simples para otimizar sua experiência no CS 1.6...
+                    </p>
+                    <a href="/html/configure.html" class="button-link">Leia como configurar</a>
+                </section>
+
+                <section id="about">
+                    <h2>Sobre</h2>
+                    <p>LAN para Jogar CS 1.6: Diversão Garantida com os Amigos. Organizar uma LAN (Local Area Network)
+                        para jogar Counter-Strike 1.6 é uma maneira clássica de reunir amigos para partidas emocionantes
+                        e cheias de ação...
+                    </p>
+                    <a href="/html/about.html" class="button-link">Leia mais sobre o game</a>
+                </section>
+
+                <section id="howto">
+                    <h2>Como Jogar</h2>
+                    <p>Aprenda os controles, modos de jogo e estratégias essenciais para se tornar um mestre no CS
+                        1.6...</p>
+                    <a href="/html/howto.html" class="button-link">Veja como jogar</a>
+                </section>
+
+                <section id="videos">
+                    <h2>Vídeos Tutoriais</h2>
+                    <p>Assista a alguns vídeos sobre estratégias, dicas e truques para melhorar sua jogabilidade...</p>
+                    <a href="/html/videos.html" class="button-link">Assistir aos vídeos</a>
+                </section>
+
+                <section id="credits">
+                    <h2>Créditos</h2>
+                    <p>Agradecimentos especiais aos desenvolvedores, designers e à comunidade que ajudou a tornar CS 1.6
+                        tão popular...</p>
+                    <a href="/html/credits.html" class="button-link">Veja os créditos completos</a>
+                </section>
+            </div>
+
+            <!-- Rodapé -->
+            <footer>
+                <p>&copy; 2024 - Dashboard CS 1.6 - Todos os direitos reservados.</p>
+            </footer>
+        </div>
+
+        <script type="module" src="../js/dashbord.js"></script>
+    </body>
+
+</html>

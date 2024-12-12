@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <link rel="stylesheet" href="/css/style2.css">
+    <link rel="icon" href="/img/ImgHist/icon.jpg">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Cadastre-se</h2>
+
+        <form action="#" method="post" id="register-form">
+            <div class="input-group">
+                <label for="username">Usuário</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu usuário...">
+            </div>
+            <div class="input-group">
+                <label for="username">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu E-mail...">
+            </div>
+            <div class="input-group">
+                <label for="username">Senha</label>
+                <input type="password" id="password" name="password" placeholder="Digite seu senha...">
+            </div>
+            <div class="input-group">
+                <button type="submit">Cadastrar</button>
+            </div>
+
+        </form>
+
+        <br>
+        <br>
+        <footer>
+            <p>&copy; 2024 - Dashboard CS 1.6 - Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    <script type="module" src="../js/register.js"></script>
+</body>
+
+</html>

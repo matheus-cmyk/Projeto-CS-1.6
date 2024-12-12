@@ -1,0 +1,165 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #0b1f2d, #003355, #1d3e5f, #4a6f88);
+    background-size: 200% 200%;
+    animation: gradientCS 3s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+/* Animação de gradiente super rápida e nítida */
+@keyframes gradientCS {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.login-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url("/img/cs wallpaper 2.jpg");
+    background-size: cover;
+    background-blend-mode: overlay;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Estilo do formulário */
+#login-form {
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+
+}
+
+/* Estilo dos labels */
+#login-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+/* Estilo dos inputs */
+#login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Foco nos inputs */
+#login-form input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilo do botão */
+#login-form button {
+    background-color: #587097;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover no botão */
+#login-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Resposividade */
+@media (max-width: 480px) {
+    #login-form {
+        padding: 15px 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #login-form button {
+        font-size: 14px;
+    }
+}
+
+/* Botão de login */
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #1b2028;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.login-btn:hover {
+    background-color: #56769e;
+}
+
+/* Link de cadastro */
+.register-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.register-link a {
+    color: #bcab4d;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #222;
+    color: #aaa;
+}

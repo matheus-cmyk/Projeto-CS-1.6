@@ -1,0 +1,147 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #0b1f2d, #003355, #1d3e5f, #4a6f88);
+    background-size: 200% 200%;
+    animation: gradientCS 3s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+/* Animação de gradiente super rápida e nítida */
+@keyframes gradientCS {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* Estilo do contêiner de login */
+.login-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url("/img/cs wallpaper 2.jpg");
+    background-size: cover;
+    background-blend-mode: overlay;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Estilo dos grupos de entrada */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.input-group input:focus {
+    border-color: #bcab4d;
+    outline: none;
+    box-shadow: 0 0 5px rgba(188, 171, 77, 0.5);
+}
+
+
+button {
+    background-color: #f3f7fe;
+    color: #3b82f6;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100px;
+    height: 45px;
+    transition: 0.3s;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button:hover {
+    background-color: #3b82f6;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+  }
+
+/* Link de cadastro */
+.register-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.register-link a {
+    color: #bcab4d;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #222;
+    color: #aaa;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Jogar CS 1.6 - Tutorial</title>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <link rel="stylesheet" href="/css/style8.css">
+    <link rel="icon" href="/img/ImgHist/icon.jpg">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Bem-vindo ao Tutorial de CS 1.6</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#controles">Controles</a></li>
+                <li><a href="#estrategias">Estratégias</a></li>
+                <li><a href="#compras">Compras</a></li>
+            </ul>
+        </nav>
+
+        <section id="introducao" class="intro">
+            <h2>Introdução</h2>
+            <p>Counter-Strike 1.6 é um dos jogos de tiro mais icônicos. Você joga como um terrorista ou contra-terrorista em missões que envolvem plantar/desarmar bombas ou resgatar reféns.</p>
+            <p>O objetivo é completar sua missão ou eliminar a equipe adversária. Aqui, vamos te guiar com dicas e controles básicos para você começar sua jornada!</p>
+        </section>
+
+        <section id="controles" class="history">
+            <h2>Controles Básicos</h2>
+            <p>Dominar os controles é fundamental para se sair bem em CS 1.6. Aqui estão os comandos principais:</p>
+            
+            <!-- Parte 1: Movimentação -->
+            <div class="control-group">
+                <h3>Movimentação</h3>
+                <ul>
+                    <li><strong>W</strong> - Avançar<span class="tooltip-video" data-video=""></span></li>
+                    <li><strong>S</strong> - Retroceder<span class="tooltip-video" data-video=""></span></li>
+                    <li><strong>A</strong> - Mover para a esquerda<span class="tooltip-video" data-video=""></span></li>
+                    <li><strong>D</strong> - Mover para a direita<span class="tooltip-video" data-video=""></span></li>
+                </ul>
+            </div>
+            <br>
+            <!-- Parte 2: Ações básicas -->
+            <div class="control-group">
+                <h3>Ações Básicas</h3>
+                <ul>
+                    <li><strong>Espaço</strong> - Pular</li>
+                    <li><strong>Ctrl</strong> - Agachar</li>
+                </ul>
+            </div>
+            <br>
+            <!-- Parte 3: Atirar e Interagir -->
+            <div class="control-group">
+                <h3>Atirar e Interagir</h3>
+                <ul>
+                    <li><strong>R</strong> - Recarregar</li>
+                    <li><strong>Mouse1</strong> - Atirar</li>
+                    <li><strong>Mouse2</strong> - Mirar</li>
+                </ul>
+            </div>
+            <br>
+            <!-- Parte 4: Troca de armas -->
+            <div class="control-group">
+                <h3>Troca de Armas</h3>
+                <ul>
+                    <li><strong>Q</strong> - Mudar de arma</li>
+                    <li><strong>1</strong> - Arma Primária (ex: Rifle)</li>
+                    <li><strong>2</strong> - Arma Secundária (ex: Pistola)</li>
+                    <li><strong>Bolinha do Mouse</strong> - Alternar entre armas (se configurado no jogo)</li>
+                </ul>
+            </div>
+            <br>
+            <p>Use essas teclas para se movimentar, atacar e defender durante as partidas. A bolinha do mouse pode ser configurada para alternar entre as armas, o que pode ser muito útil para uma troca rápida durante o combate.</p>
+        </section>
+
+        <section id="estrategias" class="success">
+            <h2>Estratégias Iniciais</h2>
+            <p>Agora que você já conhece os controles, é hora de aprender algumas estratégias essenciais para começar a jogar:</p>
+            <ul>
+                <li><strong>Trabalhe em equipe:</strong> Comunicação é a chave. Informe seus colegas sobre a posição dos inimigos e seus planos.</li>
+                <li><strong>Escolha a arma certa:</strong> Compre as armas no início de cada rodada com base no seu orçamento e estilo de jogo.</li>
+                <li><strong>Use a economia a seu favor:</strong> Economize dinheiro para comprar equipamentos melhores nas rodadas seguintes.</li>
+                <li><strong>Preste atenção nos sons:</strong> Ouça os passos dos inimigos e saiba se estão se aproximando ou se escondendo.</li>
+                <li><strong>Posicione-se estrategicamente:</strong> Use coberturas, jogue no modo crouch (agachado) e evite correr muito, pois isso faz barulho.</li>
+                <li><strong>Aprenda os mapas:</strong> Conheça as posições dos bomb sites, as áreas de cobertura e as rotas mais comuns usadas pelos inimigos.</li>
+                <li><strong>Mude de arma de forma eficiente:</strong> Durante a partida, saiba quando mudar para uma arma secundária (como a pistola) para economizar munição ou por agilidade em combate.</li>
+                <li><strong>Como plantar a bomba:</strong> Se você for terrorista, ao chegar no bomb site, pressione <strong>G</strong> para plantar a bomba. Fique protegido durante o processo e não permita que os contra-terroristas desarmem.</li>
+                <li><strong>Como desarmar a bomba:</strong> Se você for contra-terrorista, ao se aproximar de uma bomba plantada, pressione <strong>R</strong> para iniciar o desarme. Cuidado com os inimigos ao redor!</li>
+            </ul>
+        </section>
+
+        <section id="compras" class="culture">
+            <h2>Compras e Equipamentos</h2>
+            <p>Em CS 1.6, cada rodada começa com um orçamento limitado. Saber como gastar seu dinheiro de forma eficaz é crucial para o sucesso.</p>
+            <ul>
+                <li><strong>Faca:</strong> Utilizada para se mover mais rapidamente e atacar com precisão em combate corpo a corpo.</li>
+                <li><strong>Granadas:</strong> As granadas de fumaça e explosivas são essenciais para o controle de áreas e táticas ofensivas.</li>
+                <li><strong>Kevlar:</strong> O colete balístico protege você de tiros e aumenta sua resistência.</li>
+                <li><strong>Desarmador de bombas:</strong> Essencial para os contra-terroristas desarmarem as bombas plantadas pelos terroristas.</li>
+            </ul>
+            <p>Compre equipamentos adequados conforme seu estilo de jogo e o orçamento de sua equipe!</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Counter-Strike</p>
+        </footer>
+    </div>
+
+    <script src="java/historia.js"></script>
+    <script src="java/historia2.js"></script>
+  
+</body>
+</html>
