@@ -63,4 +63,4 @@ Um web site sobre CS 1.6 que fala sobre tudo o que precisa saber, de como jogar,
   
 ## 👨‍💻 Desenvolvedores – Matheus Munhoz, Cassiel Araujo, Ângelo Vieira, Lucas Berwig, Eduardo Pinho, Fernando Junqueira. 
 
- ## 📄 Licenç
+ ## 📄 Licença
