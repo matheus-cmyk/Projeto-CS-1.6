@@ -56,7 +56,7 @@ Um web site sobre CS 1.6 que fala sobre tudo o que precisa saber, de como jogar,
 ├──register.js
 📝package
 📝package-lock
-```
+
 
 
 
